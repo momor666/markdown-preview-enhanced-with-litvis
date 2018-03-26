@@ -12,6 +12,7 @@ const mume = require("@shd101wyy/mume");
 const atom_1 = require("atom");
 const path = require("path");
 const config_1 = require("./config");
+const linting_1 = require("./linting");
 const preview_content_provider_1 = require("./preview-content-provider");
 const utility = mume.utility;
 let subscriptions = null;
@@ -556,10 +557,13 @@ function onModifySource(codeChunkData, result, filePath) {
     });
 }
 mume.MarkdownEngine.onModifySource(onModifySource);
+mume.MarkdownEngine.onUpdateLintingReport(linting_1.updateLintingReport);
 function deactivate() {
     subscriptions.dispose();
 }
 exports.deactivate = deactivate;
 var config_schema_1 = require("./config-schema");
 exports.config = config_schema_1.configSchema;
+var linting_2 = require("./linting");
+exports.consumeIndie = linting_2.consumeIndie;
 //# sourceMappingURL=extension.js.map
