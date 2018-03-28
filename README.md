@@ -1,18 +1,18 @@
 # Markdown preview enhanced with litvis
 
 This project is a fork of [`markdown-preview-enhanced`](https://github.com/shd101wyy/markdown-preview-enhanced), which is a popular [Atom package](https://atom.io/packages/markdown-preview-enhanced) for previewing markdown files.
-Most of the code in this fork is inherited from the upstream repository and is thus a courtesy of [@shd101wyy](https://github.com/shd101wyy) and other [contributors](https://github.com/shd101wyy/markdown-preview-enhanced/graphs/contributors) to `markdown-preview-enhanced`.
+Most of the code in this fork is inherited from the upstream repository and is thus courtesy of [@shd101wyy](https://github.com/shd101wyy) and other [contributors](https://github.com/shd101wyy/markdown-preview-enhanced/graphs/contributors) to `markdown-preview-enhanced`.
 
 The fork produces an Atom package called [`markdown-preview-enhanced-with-litvis`](https://atom.io/packages/markdown-preview-enhanced-with-litvis), which enables _Literate Visualisation_ ([litvis](http://litvis.org/)) in rendered markdown previews.
 
-Litvis functionality has been designed and developed at [giCentre](https://www.gicentre.net/) by [Jo Wood](https://github.com/orgs/gicentre/people/jwoLondon), [Alexander Kachkaev](https://github.com/orgs/gicentre/people/kachkaev) and [Jason Dykes](https://github.com/orgs/gicentre/people/jsndyks).
+Litvis functionality has been designed and developed at [giCentre](https://www.gicentre.net/) by [Jo Wood](https://github.com/jwoLondon), [Alexander Kachkaev](https://github.com/kachkaev) and [Jason Dykes](https://github.com/jsndyks).
 This research was in part supported by the EU under the EC Grant Agreement No. FP7-IP-608142 to Project [VALCRI](http://valcri.org/).
 
-## Setup
+## Setup for Atom Users
 
 ### Via Atom’s GUI
 
-1.  Go to _Preferences_ → _Packages_ and disable `markdown-preview` (standard Atom’s preview tool)
+1.  Go to _Preferences_ → _Packages_ and disable `markdown-preview` (Atom’s standard preview tool)
 
 1.  If you are using `markdown-preview-enhanced`, temporary disable it too while you are trying out this fork.
 
@@ -27,6 +27,9 @@ apm install markdown-preview-enhanced-with-litvis
 ```
 
 ## Getting started with litvis narratives
+
+Literate visualization uses [Elm](http://elm-lang.org) and [Vega-Lite](https://vega.github.io/vega-lite) in the form of a declarative visualization language [elm-vega](http://package.elm-lang.org/packages/gicentre/elm-vega/latest).
+While you don't have to use elm-vega in a litvis document it does enable quick declarative generation of interactive data graphics and therefore considerably enhances the capability of a litvis document.
 
 Creating your own litvis narrative is as easy as writing a markdown file.
 You can start with exploring the examples available at
