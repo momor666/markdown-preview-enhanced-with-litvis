@@ -1,4 +1,4 @@
-# Markdown preview enhanced with litvis
+# Atom `markdown-preview-enhanced` with ([litvis](http://litvis.org/))
 
 This project is a fork of [`markdown-preview-enhanced`](https://github.com/shd101wyy/markdown-preview-enhanced), which is a popular [Atom package](https://atom.io/packages/markdown-preview-enhanced) for previewing markdown files.
 Most of the code in this fork is inherited from the upstream repository and is thus courtesy of [@shd101wyy](https://github.com/shd101wyy) and other [contributors](https://github.com/shd101wyy/markdown-preview-enhanced/graphs/contributors) to `markdown-preview-enhanced`.
@@ -50,7 +50,7 @@ https://github.com/gicentre/litvis/tree/master/examples.
 
 It is possible to automatically format litvis-enabled markdown files including embedded Elm code blocks with [Prettier](https://prettier.io/), which is an opinionated code formatting tool.
 
-Prettier is available in Atom via [`prettier-atom`](https://github.com/prettier/prettier-atom) package, but it does not format literate Elm code blocks in markdown files out of box.
+Prettier is available in Atom via [`prettier-atom`](https://github.com/prettier/prettier-atom) package, but it does not format literate Elm code blocks in markdown files out of the box.
 
 Please follow these steps to enable full-featured formatting support for litvis in Atom:
 
@@ -79,6 +79,13 @@ Please follow these steps to enable full-featured formatting support for litvis 
       tabWidth: 4
     ```
 
+    Doing this via bash:
+
+    ```bash
+    echo -e "overrides:\n- files: \"*.md\"\n  options:\n    tabWidth: 4" > ~/.prettierrc
+    ```
+
+
     This will indent bullet point lists in markdowns with four spaces instead of two.
 
 ## Getting linting feedback for litvis narratives
@@ -94,5 +101,5 @@ Otherwise, please install packages called [`linter`](https://atom.io/packages/li
 apm install linter linter-ui-default intentions busy-signal
 ```
 
-When you are working on a complex litvis narrative that consists of several documents or depends on narrative schemas, you may benefit from going to `linter-ui-default` settings and changing _Panel Represents_ parameter to _Entire project_.
+When you are working on branching litvis narratives or those depending on narrative schemas, you may benefit from going to `linter-ui-default` settings and changing _Panel Represents_ parameter to _Entire project_.
 This will make the list of reported issues more informative.
