@@ -39,7 +39,7 @@ export declare class MarkdownPreviewEnhancedView {
     /**
      * Get the markdown editor for this preview
      */
-    getEditor(): TextEditor;
+    getEditor(): any;
     /**
      * Get markdown engine
      */
@@ -117,7 +117,7 @@ export declare class MarkdownPreviewEnhancedView {
     /**
      * Get the project directory path of the editor
      */
-    static getProjectDirectoryPathForEditor(editor: TextEditor): string;
+    static getProjectDirectoryPathForEditor(editor: TextEditor): any;
     /**
      * Post message to this.webview
      * @param data
