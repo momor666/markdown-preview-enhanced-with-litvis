@@ -673,7 +673,7 @@ class MarkdownPreviewEnhancedView {
         if (!this.engine) {
             return;
         }
-        this.engine.runAllCodeChunks().then(() => {
+        this.engine.runCodeChunks().then(() => {
             this.renderMarkdown();
         });
     }
