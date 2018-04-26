@@ -1,5 +1,9 @@
 # CHANGELOG for `markdown-preview-enhanced-with-litvis`
 
+## 0.5.2
+
+* Fix path detection for elm binaries
+
 ## 0.5.1
 
 * Use a local copy of `elm` to avoid its setup via npm
