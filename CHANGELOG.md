@@ -1,6 +1,6 @@
 # CHANGELOG for `markdown-preview-enhanced-with-litvis`
 
-## 0.5.2
+## 0.5.2, 0.5.3
 
 * Fix path detection for elm binaries
 
