@@ -1,6 +1,11 @@
 # CHANGELOG for `markdown-preview-enhanced-with-litvis`
 
-## 0.5.2, 0.5.3
+## 0.6.0
+
+* Use `atom-package-deps` to prompt about installing `linter-ui-default`
+* Merge from upstream to use better config defaults
+
+## 0.5.2-0.5.6
 
 * Fix path detection for elm binaries
 
