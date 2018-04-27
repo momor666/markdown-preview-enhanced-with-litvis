@@ -1,5 +1,9 @@
 # CHANGELOG for `markdown-preview-enhanced-with-litvis`
 
+## 0.6.1
+
+*   Suggest installing dependencies of `linter-ui-default` too to reduce the number of clicks by user
+
 ## 0.6.0
 
 *   Use `atom-package-deps` to prompt about installing `linter-ui-default`

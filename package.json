@@ -77,7 +77,10 @@
     "typescript": "^2.7.2"
   },
   "package-deps": [
-    "linter-ui-default"
+    "linter-ui-default",
+    "intentions",
+    "linter",
+    "busy-signal"
   ],
   "consumedServices": {
     "linter-indie": {
