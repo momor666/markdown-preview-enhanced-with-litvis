@@ -132,6 +132,11 @@ function startPreview(editor) {
 }
 
 export function activate(state) {
+  if (!atom.inSpecMode()) {
+    require("atom-package-deps").install(
+      "markdown-preview-enhanced-with-litvis",
+    );
+  }
   mume
     .init() // init mume package
     .then(() => {
