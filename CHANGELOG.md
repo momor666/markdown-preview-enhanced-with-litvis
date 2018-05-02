@@ -1,4 +1,6 @@
-# CHANGELOG for `markdown-preview-enhanced-with-litvis`
+## 0.7.0
+
+*   Improve parsing of narrative schemas, support label aliases and fix rules.
 
 ## 0.6.1
 
